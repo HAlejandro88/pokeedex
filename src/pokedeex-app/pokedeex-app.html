@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="pokedeex-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class PokedeexApp extends Polymer.Element {
+      static get is() { return 'pokedeex-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'pokedeex-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(PokedeexApp.is, PokedeexApp);
+  </script>
+</dom-module>

@@ -1,0 +1,6 @@
+{
+  "name": "pokedeex",
+  "short_name": "pokedeex",
+  "start_url": "/",
+  "display": "standalone"
+}
