@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>pokedeex-app test</title>
+
+    <script src="../../../webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../../src/pokedeex-app/pokedeex-app.html">
+  </head>
+  <body>
+
+    <test-fixture id="cheked">
+      <template>
+        <pokedeex-app></pokedeex-app>
+      </template>
+    </test-fixture>
+
+    <test-fixture id="ChangedPropertyTestFixture">
+      <template>
+        <pokede-card name="bulbasor"></pokede-card>
+      </template>
+    </test-fixture>
+
+<script>
+    suite('pokedex-card',function(){
+
+        test('setting a property on the element works', function (){
+            var element = fixture('check-property');
+            assert.equal(element.name,'bulbasor');
+            var elementShadowRoot = element.shadowRoot;
+            var elementHeader = elementShadowRoot.querySelector('paper-card');
+            assert.equal(elementHeader.innerHTML,'bulbasor');
+        });
+
+        test('setting a property on the element works', function (){
+          var card = fixture('pokedex-panel');
+          assert.equal(card.name,'pokemon');
+          var cardShadowRoot = card.shadowRoot;
+          var cardHeader = cardShadowRoot.querySelector();
+          assert.equal()
+        });
+
+        /*test('', function (){
+          assert.equal(true,true)
+        })*/
+    });
+</script>
+</html>

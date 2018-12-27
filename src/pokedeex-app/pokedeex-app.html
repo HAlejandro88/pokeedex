@@ -68,6 +68,13 @@
           }
         }
       }
+      ready(){
+        super.ready();
+        fetch('http;//localhost:9001/pokemon')
+        .then(response => response.json )
+        .then(pokemos = this.set('pokemons',pokemos))
+        .catch(console.error)
+      }
     }
     
     window.customElements.define(PokedeexApp.is, PokedeexApp);

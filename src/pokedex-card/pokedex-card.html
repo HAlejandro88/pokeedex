@@ -16,11 +16,12 @@
                 color: white;
             }
             paper-button.battle {
-                background-color: #5D4037;
+                background-color: #37F903;
+                align-items: center;
+                margin-left: 50px;
+                border-radius: 20px;
             }
-            paper-button.more {
-                background-color: #1B5E20;
-            }
+            
         </style>
         
         <paper-card image="[[pokemon.image]]" style$="background-color: [[coloWithType]]">
@@ -29,8 +30,7 @@
                 <p><strong>[[battlesStats]]</strong></p>
             </div>
             <div class="card-actions">
-                <paper-button class="battle" on-click="battle">Battle!!</paper-button>
-                <paper-button class="more">More</paper-button>
+                <paper-button class="battle" on-click="battle">Yo te elijo</paper-button>
             </div>
         </paper-card>
 

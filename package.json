@@ -1,0 +1,33 @@
+{
+  "name": "pokedeex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "polymer serve | npm run watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "browser-sync star --proxy localhost3000 --files \"src/**/*.*,index.html,*js\"",
+    "db": "json-server --watch db.json --port 9001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HAlejandro88/pokeedex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "json-serve": "^0.14.0"
+  },
+  "bugs": {
+    "url": "https://github.com/HAlejandro88/pokeedex/issues"
+  },
+  "homepage": "https://github.com/HAlejandro88/pokeedex#readme",
+  "dependencies": {
+    "@polymer/iron-ajax": "^3.0.1"
+  }
+}
